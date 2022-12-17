@@ -1,5 +1,6 @@
 {
   "channelId": "CHANNEL ID",
   "botToken": "BOT TOKEN",
-  "checkInterval": 30
+  "checkInterval": 30,
+  "countryCode": "MY"
 }

@@ -28,7 +28,7 @@ async function startBotAsync(): Promise<void> {
     );
 
     setInterval(async () => {
-      await scalpEpicAndNotifyEveryone(c, config.channelId);
+      await scalpEpicAndNotifyEveryone(c, config.channelId, config.countryCode);
     }, checkInterval * 60 * 1000);
   });
 

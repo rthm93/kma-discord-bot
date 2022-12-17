@@ -3,13 +3,19 @@ import { getGames, OfferGame } from 'epic-free-games';
 import dayjs from 'dayjs';
 import { LastGameStore } from './stores/last-game.store.js';
 
+const defaultCountry = 'MY';
+
 export async function scalpEpicAndNotifyEveryone(
   c: Client<true>,
   channelId: string,
+  countryCode: string = defaultCountry,
 ): Promise<void> {
   try {
     console.log(`Getting free games from epic`);
-    const { currentGames } = await getGames('MY' as any, true);
+    const { currentGames } = await getGames(
+      (countryCode || defaultCountry) as any,
+      true,
+    );
 
     if (!currentGames || !currentGames.length) {
       console.warn('No free games :(');

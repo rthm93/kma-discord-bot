@@ -29,3 +29,4 @@ The main configuration file is `src/config.json`. Make sure to restart the chatb
 |channelId|Channel ID of the text channel that you want the message to be sent to when there are new free games in Epic Games.| 
 |botToken|Discord Bot Token, obtain this from Discord settings|
 |checkInterval|What is the interval that this chatbot should check Epic Games for new free games. Defaults to 30 minutes|
+|countryCode|Country code in 2 characters. Eg: MY|
