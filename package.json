@@ -22,7 +22,8 @@
     "typescript": "~4.9"
   },
   "scripts": {
-    "start": "node build/src/main.js",
+    "debug": "node build/src/main.js",
+    "start": "npm install && npm run build && npm run debug",
     "clean": "rimraf coverage build tmp",
     "prebuild": "npm run lint",
     "build": "tsc -p tsconfig.json",
@@ -36,7 +37,7 @@
   "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "date-fns": "^2.29.3",
+    "dayjs": "^1.11.7",
     "discord.js": "^14.7.1",
     "epic-free-games": "^3.1.1",
     "tslib": "~2.4"
