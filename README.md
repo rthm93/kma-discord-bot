@@ -22,7 +22,7 @@ npm run start
 ```
 
 ## Configurations
-The main configuration file is `src/config.json`.
+The main configuration file is `src/config.json`. Make sure to restart the chatbot after you made changes to this file.
 
 |Key|Description|
 |---|---|
